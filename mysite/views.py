@@ -1,4 +1,7 @@
+from datetime import datetime
+
 from django.shortcuts import render
 
 def index(request):
-    return render(request, 'index.html', {'msg': 'Hello'})
+    noew = datetime.now()
+    return render(request, 'index.html', locals())
