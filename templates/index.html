@@ -7,6 +7,7 @@
         <li class="active"><a href='/'>Home</a></li>
         {% for tv in tv_list %}
             <li><a href='/{{ forloop.counter0 }}/'>{{ tv.name }}</a></li>
+        {% endfor %}
     </ul>
 {% endblock %}
 {% block content %}
